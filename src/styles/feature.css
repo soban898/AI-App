@@ -1,0 +1,105 @@
+.feature-container {
+  text-align: center;
+  padding: 50px 20px;
+  background: black;
+  color: white;
+}
+
+.feature-title {
+  font-size: 1.8rem;
+  margin-bottom: 40px;
+}
+
+/* Responsive Grid */
+.feature-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 20px;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.feature-card {
+background: black;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Specific Size for Images */
+.feature-card img {
+  width: 100%; /* Image will fit inside card */
+  height: auto; /* Maintain aspect ratio */
+  max-height: 180px; /* Restrict large images */
+  object-fit: contain; /* Prevent stretching */
+  border-radius: 10px;
+  display: block;
+  margin: 0 auto; /* Images ko center align karne ke liye */
+}
+
+/* Dashboard & Reports fix */
+.feature-card.wide {
+  grid-column: span 2;
+}
+
+/* Dashboard & Reports ko properly resize karne ke liye */
+.dash {
+  width: 100% !important;  /* Full width */
+  max-height: 400px !important;  /* Bara size */
+  object-fit: cover !important;  /* Proper scaling */
+  border-radius: 10px !important;
+  display: block !important;  /* Koi bhi extra styles hatane ke liye */
+}
+
+.report{
+  width: 100% !important;  /* Full width */
+  max-height: 400px !important;  /* Bara size */
+  object-fit: cover !important;  /* Proper scaling */
+  border-radius: 10px !important;
+  display: block !important;  /* Koi bhi extra styles hatane ke liye */
+}
+
+
+
+/* Feature-card ka background ya padding na aaye */
+.feature-card.wide {
+  background: transparent !important;  /* Background hata diya */
+  padding: 0 !important;
+  border: none !important;
+  box-shadow: none !important;
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+}
+
+
+
+
+/* Responsive Fix */
+@media (max-width: 920px) {
+  .feature-grid {
+    grid-template-columns: 1fr; /* Stack items on smaller screens */
+  }
+
+  .feature-card.wide {
+    grid-column: span 1; /* Prevent oversized images */
+  }
+
+  .dash, .report {
+    max-height: 320px; /* Slightly smaller on mobile */
+  }
+
+  .feature-img-placeholder img {
+    width: 80% !important;  /* Pehle full tha, ab thoda chhota */
+    max-height: 140px !important; /* Pehle se halka chhota */
+  }
+
+  /* Unke card ka bhi size thoda adjust */
+  .feature-card {
+    padding: 15px !important; /* Pehle 20px tha, ab halka kam */
+  }
+ 
+}

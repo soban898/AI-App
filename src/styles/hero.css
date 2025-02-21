@@ -1,0 +1,127 @@
+/* --- Main Hero Section --- */
+.hero-section {
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  /* background: linear-gradient(180deg, #090118 0%, #240046 40%, #3b0086 100%); */
+  color: white;
+  padding: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  background: black;
+}
+
+/* --- Wrapper: Stack Content by Default --- */
+.content-wrapper {
+  display: flex;
+  flex-direction: column; /* 🔥 Default: Text on Top, Image Below */
+  justify-content: center;
+  align-items: center;
+  max-width: 1200px;
+  width: 100%;
+  gap: 2rem;
+}
+
+/* --- Fixed Text Area (Always on Top) --- */
+.text-container {
+  text-align: center;
+  max-width: 600px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 19px;
+}
+
+
+.badge {
+  background: #6a0dad;
+  padding: 8px 16px;
+  font-size: 12px;
+  text-transform: uppercase;
+  border-radius: 12px;
+  box-shadow: 0px 2px 10px rgba(106, 13, 173, 0.5);
+}
+
+.heading {
+  font-size: 3rem;
+  font-weight: bold;
+  margin: 1rem 0;
+}
+
+
+
+.highlight {
+  background: linear-gradient(180deg, #FFF 54.17%, #B372CF 100%);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.subtext {
+  font-size: 1.2rem;
+  color: rgba(255, 255, 255, 0.7);
+  margin-bottom: 1.5rem;
+
+}
+
+.cta-button {
+  padding: 12px 24px;
+  background: white;
+  color: black;
+  font-weight: bold;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.cta-button:hover {
+  background: #b372cf;
+  color: white;
+}
+
+/* --- Image Below Text Always --- */
+.image-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.M-Graph {
+  max-width: 100%;
+  height: auto;
+  border-radius: 12px;
+  border-radius: 10px;
+border: 1px solid rgba(255, 255, 255, 0.10);
+background: linear-gradient(270deg, #0D0718 0%, rgba(15, 8, 27, 0.00) 47.85%, #0B0614 100%);
+box-shadow: 0px -20px 70px 0px rgba(140, 69, 255, 0.25), 0px -19px 70px 0px rgba(140, 69, 255, 0.40);
+}
+
+/* --- Responsive Circle Overlay --- */
+.circle-overlay {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 850px;
+  height: 850px;
+  transform: translate(-50%, -50%);
+  border-radius: 825px;
+background: #602A9A;
+filter: blur(267px);
+  z-index: -1;
+}
+
+
+/* --- Responsive Design --- */
+@media (min-width: 1024px) {
+  .content-wrapper {
+      max-width: 900px;
+  }
+}
+
+@media (max-width: 768px) {
+  .heading {
+      font-size: 2.5rem;
+  }
+}

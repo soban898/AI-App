@@ -1,0 +1,183 @@
+/* Navbar Styles */
+.navbar {
+    background: #020103;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+    padding: 0.5rem 1rem;
+  }
+  
+  /* Hamburger Icon */
+  .navbar-toggler {
+    border: none;
+    background: transparent;
+    outline: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .navbar-toggler-icon {
+    background-image: none;
+    width: 24px;
+    height: 18px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  
+  .navbar-toggler-icon span {
+    display: block;
+    width: 100%;
+    height: 2px;
+    background-color: white; /* Bilkul White */
+    transition: all 0.3s;
+    position: relative;
+    top: 7px;
+  }
+  
+  /* Lines ke beech mein gap */
+  .navbar-toggler-icon span + span {
+    margin-top: 4px;
+  }
+  
+  /* Animation for X */
+  .navbar-toggler-icon span {
+    transition: all 0.1s ease-in-out;
+  }
+  
+  .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon span:nth-child(1) {
+    transform: rotate(45deg) translate(5px, 5px);
+  }
+  
+  .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon span:nth-child(3) {
+    transform: rotate(-45deg) translate(5px, -5px);
+  }
+  
+  .navbar-toggler:focus {
+    box-shadow: none;
+  }
+  
+  
+  /* Navbar Links */
+  .navbar-nav {
+    margin: 0 auto;
+    text-align: center;
+    gap: 20px;
+  }
+  .Join-wait{
+    display: flex;
+width: 109px;
+height: 30px;
+padding: 2px 15px;
+justify-content: center;
+align-items: center;
+gap: 5px;
+border-radius: 8px;
+border: 1px solid rgba(255, 255, 255, 0.15);
+background: rgba(140, 69, 255, 0.40);
+box-shadow: 0px 0px 6px 3px rgba(255, 255, 255, 0.25) inset;
+backdrop-filter: blur(7px);
+color: white;
+font-size: 15px;
+  }
+  .navbar-collapse-custom {
+    justify-content: center;
+  }
+  
+  .navbar-brand {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: rgba(255, 255, 255, 0.80);
+    transition: color 0.3s;
+  }
+  
+  .navbar-brand:hover {
+    color: rgba(255, 255, 255, 1);
+  }
+  
+  .nav-link {
+    color: rgba(255, 255, 255, 0.60);
+    transition: color 0.3s;
+  }
+  
+  .nav-link:hover {
+    color: rgba(255, 255, 255, 0.9);
+  }
+  
+  .navbar-icons {
+    display: flex;
+    gap: 15px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    color: rgba(255, 255, 255, 0.60);
+    transition: color 0.3s;
+  }
+  
+  .navbar-icons:hover {
+    color: rgba(255, 255, 255, 0.9);
+  }
+  
+  .navbar-expand-lg .navbar-nav .nav-link {
+    color: rgba(255, 255, 255, 0.60);
+  }
+  
+  /* Mobile Styles */
+  @media (max-width: 991px) {
+    .navbar-toggler {
+      order: 3;
+    }
+  
+    .navbar-brand {
+      order: 2;
+      margin: 0 auto;
+    }
+  
+    .navbar-icons {
+      order: 1;
+    
+    }
+
+    .Join-wait{
+      display: flex;
+  width: 109px;
+  height: 30px;
+  padding: 2px 15px;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  border-radius: 8px;
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  background: rgba(140, 69, 255, 0.40);
+  box-shadow: 0px 0px 6px 3px rgba(255, 255, 255, 0.25) inset;
+  backdrop-filter: blur(7px);
+  color: white;
+  font-size: 15px;
+    }
+  
+    .navbar-collapse-custom {
+      position: absolute;
+      top: 100%;
+      left: 0;
+      width: 100%;
+      background: #020103;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
+      transform: translateY(-10px); /* Pehle sirf thoda upar rahe */
+      opacity: 0;
+      z-index: 1;
+    }
+  
+    .navbar-collapse.show {
+      transform: translateY(0); /* Smoothly neeche aaye */
+      opacity: 1;
+    }
+  
+    .navbar-expanded .nav-link {
+      color: rgba(255, 255, 255, 0.60);
+    }
+  }
+  
+  
+  
+  
+  
