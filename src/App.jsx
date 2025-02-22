@@ -5,6 +5,7 @@ import Navigation from './components/Navigation'
 import AIHeroSection from './components/Land/Aiherosection';
 import TrustedBrands from './components/Land/TrustedBrands';
 import FeaturesSection from './components/Land/FeaturesSection';
+import Seo from './components/Land/Seo';
 
 function App() {
  
@@ -17,6 +18,7 @@ function App() {
       <AIHeroSection />
       <TrustedBrands />
       <FeaturesSection />
+      <Seo />
       <Routes>
       
       </Routes>
