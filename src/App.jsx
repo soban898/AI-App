@@ -6,6 +6,7 @@ import AIHeroSection from './components/Land/Aiherosection';
 import TrustedBrands from './components/Land/TrustedBrands';
 import FeaturesSection from './components/Land/FeaturesSection';
 import Seo from './components/Land/Seo';
+import TestimonialSection from './components/Land/TestimonialSection';
 
 function App() {
  
@@ -19,6 +20,7 @@ function App() {
       <TrustedBrands />
       <FeaturesSection />
       <Seo />
+      <TestimonialSection />
       <Routes>
       
       </Routes>
