@@ -5,7 +5,7 @@ import Graph from "../../img/Graph.png";
 
 const AIHeroSection = () => {
   return (
-    <section className="hero-section">
+    <section className="hero-section1">
       <div className="glow-overlay"></div>
 
       {/* Wrapper - Text Always on Top, Image Always Below */}
@@ -23,7 +23,7 @@ const AIHeroSection = () => {
 
           <h1 className="heading">
             Boost your 
-            <p className="highlight"> rankings with AI.</p>
+            <p className="highlight1"> rankings with AI.</p>
           </h1>
           <p className="subtext">
             Elevate your site’s visibility effortlessly with AI, where smart technology meets user-friendly SEO tools.

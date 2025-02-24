@@ -1,5 +1,5 @@
 /* --- Main Hero Section --- */
-.hero-section {
+.hero-section1 {
   position: relative;
   width: 100%;
   min-height: 100vh;
@@ -53,7 +53,7 @@
 
 
 
-.highlight {
+.highlight1 {
   background: linear-gradient(180deg, #FFF 54.17%, #B372CF 100%);
   background-clip: text;
   -webkit-text-fill-color: transparent;

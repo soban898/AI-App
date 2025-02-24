@@ -1,0 +1,73 @@
+.hero-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 50vh; /* Half screen height */
+    background: linear-gradient(to bottom, #000, #19012a);
+    text-align: center;
+    padding: 2rem 1rem; /* Top-bottom padding adjust */
+    margin-top: 0; /* Extra space hatane ke liye */
+  }
+  
+  .hero-title {
+    color: white;
+    font-size: 2rem;
+    font-weight: bold;
+  }
+  
+  .hero-input-container {
+    margin-top: 1rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    flex-wrap: wrap; /* Responsive ke liye */
+    justify-content: center;
+  }
+  
+  .hero-input {
+    padding: 0.9rem;
+    background: #1e1e1e;
+    color: white;
+    border: 1px solid #4a4a4a;
+    border-radius: 6px;
+    width: 280px;
+    font-size: 1rem;
+  }
+  
+  .hero-button {
+    padding: 0.9rem 1.5rem;
+    background: white;
+    color: black;
+    font-weight: bold;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background 0.3s;
+    border: none;
+    font-size: 1rem;
+  }
+  
+  .hero-button:hover {
+    background: #e0e0e0;
+  }
+  
+  .hero-subtext {
+    margin-top: 1rem;
+    color: #bbbbbb;
+    font-size: 0.875rem;
+  }
+  
+  /* Responsive Fixes */
+  @media (max-width: 480px) {
+    .hero-input-container {
+      flex-direction: column;
+      gap: 0.75rem;
+    }
+    .hero-input {
+      width: 100%;
+    }
+    .hero-button {
+      width: 100%;
+    }
+  }
+  
