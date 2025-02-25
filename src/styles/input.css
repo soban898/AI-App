@@ -46,9 +46,10 @@
     border: none;
     font-size: 1rem;
   }
-  
+
   .hero-button:hover {
-    background: #e0e0e0;
+    background: #b372cf;
+    color: white;
   }
   
   .hero-subtext {

@@ -85,6 +85,13 @@ backdrop-filter: blur(7px);
 color: white;
 font-size: 15px;
   }
+
+  .Join-wait:hover{
+    background-color: #00b4d8; /* Light Cyan */
+  transform: scale(1.1);
+  box-shadow: 0px 4px 15px rgba(0, 180, 216, 0.4);
+  }
+
   .navbar-collapse-custom {
     justify-content: center;
   }
@@ -106,7 +113,9 @@ font-size: 15px;
   }
   
   .nav-link:hover {
-    color: rgba(255, 255, 255, 0.9);
+    background: linear-gradient(107deg, #28095c 0.54%, #2f0957 99.46%);
+    color: rgb(255, 255, 255) !important;
+    border-radius: 6px;
   }
   
   .navbar-icons {

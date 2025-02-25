@@ -65,7 +65,7 @@
     margin-top: auto; /* Ensures button stays at the bottom */
 }
   
-  .pricing-card.highlight {
+  .pricing-card:hover {
     background: linear-gradient(107deg, #190D2E 0.54%, #020103 99.46%);
     box-shadow: 0 0 20px rgba(150, 0, 255, 0.6);
     color: white;

@@ -34,7 +34,7 @@ const Pricing = () => {
           <button className="pricing-button">Join waitlist</button>
         </div>
 
-        <div className="pricing-card highlight">
+        <div className="pricing-card">
           <h3>Pro</h3>
           <p className="price">$79/mo</p>
           <ul>
